@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<fx:root alignment="CENTER" type="VBox" xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml">
+    <Circle fx:id="circle" fill="DODGERBLUE" opacity="0.6" radius="20.0" stroke="BLACK" strokeLineCap="ROUND"
+            strokeLineJoin="ROUND" VBox.vgrow="ALWAYS"/>
+</fx:root>

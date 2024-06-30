@@ -1,0 +1,158 @@
+/* CUSTOM COLOR VARIABLES */
+.root {
+    -bg-dark: #2e2e2e;
+    -bg-lightdark: #5e5e5e;
+    -bg-input: lightgrey;
+    -bg-btn: grey;
+
+    -text-light: lightgrey;
+    -text-dark: #2e2e2e;
+}
+
+/**************************/
+
+.root {
+    -fx-background-color: -bg-dark;
+}
+
+.text-primary {
+    -fx-text-fill: -text-light;
+}
+
+* {
+    -fx-text-fill: -text-light;
+}
+
+.button, .combo-box {
+    -fx-text-fill: -text-light;
+    -fx-background-color: -bg-btn;
+    -fx-background-insets: 0;
+    -fx-border-color: -text-light;
+    -fx-border-radius: 2px;
+    -fx-background-radius: 2px;
+    -fx-font-weight: bold;
+}
+
+.combo-box * {
+    -fx-text-fill: -text-light;
+    -fx-background-color: -bg-btn;
+    -fx-border-radius: 2px;
+    -fx-background-radius: 2px;
+}
+
+.combo-box .list-cell:hover, .button:hover {
+    -fx-background-color: -bg-lightdark;
+}
+
+.combo-box .arrow {
+    -fx-background-color: -text-light;
+}
+
+.text-field {
+    -fx-background-color: -bg-input;
+    -fx-text-fill: -text-dark;
+}
+
+.list-view {
+    -fx-background-color: -bg-input;
+    -fx-border-radius: 2px;
+}
+
+
+.pane {
+    -fx-border-width: 5px;
+    -fx-border-color: #1e1e1e;
+    -fx-background-color: #2e2e2e;
+    -fx-background-image: url('/images/background.png');
+    -fx-background-size: contain;
+}
+
+#ownerNameSquareLabel {
+    -fx-font-style: italic;
+    -fx-font-size: 12px;
+    -fx-padding: 0 0 0 2px;
+}
+
+#nameSquareLabel {
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+#priceSquareLabel {
+    -fx-font-size: 17px;
+}
+
+#taxSquareLabel {
+    -fx-font-style: italic;
+    -fx-font-size: 12px;
+    -fx-padding: 0 2px 0 0;
+}
+
+.title {
+    -fx-font-size: 15px;
+    -fx-underline: true;
+    -fx-font-weight: bold;
+}
+
+.title-no-underline {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.title-xl {
+    -fx-font-size: 30px;
+}
+
+.left-col {
+    -fx-padding: 10px;
+}
+
+.table-view {
+    -fx-background-color: -bg-dark;
+    -fx-border-width: 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+.table-view .column-header {
+    -fx-background-color: -bg-dark;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 5, 0, 0, 0);
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: -bg-dark;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: -bg-lightdark;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 5, 0, 0, 0);
+}
+
+.table-view .cell {
+    -fx-border-color: -bg-dark;
+    -fx-border-width: 0 0 0 1;
+}
+
+.table-view .scroll-bar * {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}
+
+.playerDetails {
+    -fx-padding: 0 0 20 0;
+}
+
+* {
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-border-image-insets: 0;
+}
+
+/* Alert header panel style */
+.header-panel {
+    -fx-background-color: -bg-dark;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import view.customControls.Board?>
+<?import view.customControls.Dice?>
+
+<?import view.customControls.AllPlayersDetails?>
+<?import javafx.scene.control.Label?>
+<BorderPane fx:id="mainGameBorderPane" styleClass="text-primary" prefHeight="540.0" prefWidth="960.0"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml" fx:controller="view.controllers.MainGameController">
+    <left>
+        <GridPane styleClass="left-col">
+            <columnConstraints>
+                <ColumnConstraints minWidth="10.0" percentWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" percentHeight="50.0"/>
+                <RowConstraints minHeight="10.0" percentHeight="50.0"/>
+                <RowConstraints minHeight="10.0" percentHeight="50.0"/>
+                <RowConstraints minHeight="10.0" percentHeight="50.0"/>
+            </rowConstraints>
+            <AllPlayersDetails fx:id="allPlayersDetailsNode"/>
+            <HBox GridPane.rowIndex="1">
+                <Label styleClass="title" text="Current player"/>
+                <Label styleClass="title-no-underline" text=": "/>
+                <Label styleClass="title-no-underline" fx:id="currentPlayerLabel"/>
+            </HBox>
+            <VBox GridPane.rowIndex="2" alignment="CENTER">
+                <Dice fx:id="diceNode"/>
+                <Button fx:id="launchDiceButton" mnemonicParsing="false" onAction="#launchDice" text="Roll the dice"/>
+            </VBox>
+            <Button fx:id="saveGameButton" onAction="#saveGameButtonHandler" alignment="CENTER" GridPane.rowIndex="3"
+                    GridPane.valignment="BOTTOM"
+                    contentDisplay="CENTER" mnemonicParsing="false" text="Save game and exit"
+                    textAlignment="CENTER"/>
+        </GridPane>
+    </left>
+    <center>
+
+    </center>
+    <right>
+        <GridPane fx:id="gameGridPane" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <Board fx:id="gameBoard"/>
+            <Pane fx:id="piecesPane"/>
+        </GridPane>
+    </right>
+</BorderPane>

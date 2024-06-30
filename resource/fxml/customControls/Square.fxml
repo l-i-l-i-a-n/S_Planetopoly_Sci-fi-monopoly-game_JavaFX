@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<fx:root alignment="CENTER" type="GridPane" xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" percentWidth="50.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" percentWidth="50.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="50.0" vgrow="SOMETIMES"/>
+        <RowConstraints percentHeight="50.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <Label fx:id="ownerNameSquareLabel" alignment="BOTTOM_RIGHT" GridPane.columnSpan="2" GridPane.halignment="LEFT"
+           GridPane.valignment="TOP"/>
+    <Label fx:id="nameSquareLabel" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM"/>
+    <Label fx:id="priceSquareLabel" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+           GridPane.valignment="TOP"/>
+    <Label fx:id="taxSquareLabel" alignment="BOTTOM_RIGHT" GridPane.columnSpan="2" GridPane.halignment="RIGHT"
+           GridPane.rowIndex="1" GridPane.valignment="BOTTOM"/>
+</fx:root>
